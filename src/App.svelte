@@ -1,32 +1,48 @@
 <script>
-	import UserList from './UserList.svelte'
-	export let name;
-	export let sad;
+  import UserList from "./UserList.svelte";
 </script>
 
-<main>
-	<h1>my user list</h1>
-	<UserList></UserList>
-</main>
-
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
+  main {
+    text-align: center;
+    padding: 1em;
+    margin: 0 auto;
+  }
+  h1 {
+    color: #357c93;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 3rem
+  }
+  .row {
+    text-align: center;
+  }
+  .list {
+    margin: auto;
+    width: 30vw
+  }
+  @media (max-width: 425px) {
+    .list {
+      width: 90vw;
+    }
+  }
+  @media (min-width: 426px) and (max-width: 768px) {
+    .list {
+      width: 50vw;
+    }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .list {
+      width: 40vw;
+    }
+  }
 </style>
+
+<div class="container">
+  <div class="row">
+    <h1>user list</h1>
+  </div>
+  <div class="row list">
+    <UserList />
+  </div>
+</div>
