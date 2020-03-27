@@ -3,11 +3,6 @@
 </script>
 
 <style>
-  main {
-    text-align: center;
-    padding: 1em;
-    margin: 0 auto;
-  }
   h1 {
     color: #357c93;
     text-transform: uppercase;
