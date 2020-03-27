@@ -14,8 +14,8 @@
 
 <style>
   .avatar {
-    width: 100px;
-    height: 100px;
+    width: 4rem;
+    height: 4rem;
     border-radius: 100px;
   }
   .list {
@@ -49,12 +49,12 @@
     margin-bottom: 0;
     text-align: start;
   }
-  @media (max-width: 375px) {
+  @media (max-width: 425px) {
     .listItem {
       height: 14vh;
       padding-left: 1rem;
       padding-top: 1rem;
-      border: 1px solid #aaa;
+      box-shadow: 0px 4px 5px #aaa;
       border-radius: 10px;
       margin-bottom: 1rem;
     }
