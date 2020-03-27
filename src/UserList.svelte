@@ -27,10 +27,11 @@
     height: 12vh;
     padding-left: 2rem;
     padding-top: 1rem;
-    border: 1px solid #aaa;
     border-radius: 10px;
+    box-shadow: 0px 4px 5px #aaa;
     margin-bottom: 1rem;
     transition: all 0.2s ease;
+    background-color: #ffffff;
   }
   .listItem:hover {
     background-color: #357c93;
